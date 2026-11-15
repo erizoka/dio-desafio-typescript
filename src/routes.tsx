@@ -1,0 +1,16 @@
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home';
+import Conta from './pages/Conta';
+import ContaInfo from './pages/ContaInfo';
+
+const MainRoutes = () => {
+    return (
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/conta/:id" element={<Conta />} />
+            <Route path="/infoconta" element={<ContaInfo />} />
+        </Routes>
+    )
+}
+
+export default MainRoutes

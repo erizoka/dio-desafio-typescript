@@ -1,14 +1,15 @@
 import { Center, Button } from "@chakra-ui/react"
+import type { MouseEventHandler } from "react"
 
 interface ButtonProps {
     name: string
-    event: () => void
+    onClick: MouseEventHandler
 }
 
-export const CustomButton = ({ event, name }: ButtonProps) => {
+export const CustomButton = ({ onClick, name }: ButtonProps) => {
     return (
         <Center>
-            <Button onClick={event} colorPalette='teal' size='sm' width='100%' marginTop='5px'>
+            <Button onClick={onClick} colorPalette='teal' size='sm' width='100%' marginTop='5px'>
                 {name}
             </Button>
         </Center>
