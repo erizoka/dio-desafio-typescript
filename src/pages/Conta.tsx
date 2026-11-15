@@ -2,7 +2,7 @@ import { Center, SimpleGrid, Spinner } from "@chakra-ui/react"
 import { useParams, useNavigate } from "react-router-dom";
 import CardInfo from "../components/CardInfo"
 import { useContext, useEffect, useState } from "react"
-import { api, type IConta } from "../api";
+import type { IConta } from "../api";
 import { AppContext } from "../components/AppContext";
 
 const Conta = () => {
