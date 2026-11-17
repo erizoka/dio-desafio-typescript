@@ -1,4 +1,4 @@
-import { Badge, Box, Text, Card } from "@chakra-ui/react"
+import { Badge, Text, Card } from "@chakra-ui/react"
 import { useContext, useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { BsBank } from "react-icons/bs";
